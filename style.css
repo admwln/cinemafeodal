@@ -1,7 +1,11 @@
 :root {
   --black: #1c1817;
-  --whitedesert: #fffdeb;
-  --redvelvet: #c81d04;
+  --green-pear: #8faf7e;
+  --white-desert: #fffdeb;
+  --red-leather: #463131;
+  --red-velvet: #c81d04;
+  --yellow-mellow: #faef8a;
+
   --global-margin: 24px;
   --global-column-gap: 24px;
 }
@@ -14,19 +18,42 @@
   color: var(--black);
 }
 
-/* Header ------------------------------------------------------ */
+body {
+  background-color: var(--black);
+}
 
+/* Header ------------------------------------------------------ */
+header {
+  background-color: var(--white-desert);
+  height: 100px;
+}
 /* Header-->Navigation ----------------------------------------- */
 
 /* Hero -------------------------------------------------------- */
+.hero {
+  background-color: var(--black); /* Used if the image is unavailable */
+  height: 56.25vw; /* 56% of viewport width */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 /* Footer ------------------------------------------------------ */
 
+/* Index: Hero -------------------------------------------------------- */
+.hero.index {
+  background-image: url("images/hero.png");
+}
 /* Index: This month -------------------------------------------------- */
 
 /* Index: Next month -------------------------------------------------- */
 
 /* Index: Campaign ---------------------------------------------------- */
+
+/* Movie: Hero ------------------------------------------------------- */
+.hero.movie-page {
+  background-image: url("images/movie-page-img/hero.png");
+}
 
 /* Movie: Main ------------------------------------------------------- */
 
@@ -43,18 +70,26 @@
   }
 
   /* Header ------------------------------------------------------ */
-
+  header {
+    height: 110px;
+  }
   /* Header-->Navigation ----------------------------------------- */
 
   /* Hero -------------------------------------------------------- */
-
+  .hero {
+    height: calc(100dvh - 110px); /* Viewport height minus header */
+  }
   /* Footer ------------------------------------------------------ */
+
+  /* Index: Hero -------------------------------------------------*/
 
   /* Index: This month -------------------------------------------------- */
 
   /* Index: Next month -------------------------------------------------- */
 
   /* Index: Campaign ---------------------------------------------------- */
+
+  /* Movie: Hero ------------------------------------------------------- */
 
   /* Movie: Main ------------------------------------------------------- */
 
