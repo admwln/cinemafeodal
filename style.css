@@ -5,6 +5,7 @@
   --red-leather: #463131;
   --red-velvet: #c81d04;
   --yellow-mellow: #faef8a;
+  --yellow-mellow-75: #faef8abf;
 
   --global-margin: 24px;
   --global-column-gap: 24px;
@@ -22,6 +23,14 @@ body {
   background-color: var(--black);
 }
 
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: block;
+}
+
 /* Header ------------------------------------------------------ */
 header {
   background-color: var(--white-desert);
@@ -36,14 +45,72 @@ header {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
 }
 
+.hero > .card {
+  padding: 8px 8px 8px var(--global-margin);
+  background-color: var(--yellow-mellow-75);
+  cursor: pointer;
+}
+
+.hero > .card:hover,
+.hero > .card:active {
+  background-color: var(--yellow-mellow);
+}
+
+.hero > .card > h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*Circular button with no border or outline*/
+.hero > button.play {
+  background-color: var(--yellow-mellow-75);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 150ms ease-in-out;
+}
+
+.hero > button.play:hover,
+.hero > button.play:active {
+  background-color: var(--yellow-mellow);
+}
+
+/*Play button triangle*/
+button.play > .triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid var(--black);
+  transform: translateX(10px);
+  opacity: 0.25;
+  transition: color 150ms ease-in-out;
+}
 /* Footer ------------------------------------------------------ */
 
 /* Index: Hero -------------------------------------------------------- */
 .hero.index {
   background-image: url("images/hero.png");
 }
+
+.hero.index > .card {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 /* Index: This month -------------------------------------------------- */
 
 /* Index: Next month -------------------------------------------------- */
@@ -69,6 +136,14 @@ header {
     --global-column-gap: 24px;
   }
 
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
   /* Header ------------------------------------------------------ */
   header {
     height: 110px;
@@ -79,9 +154,39 @@ header {
   .hero {
     height: calc(100dvh - 110px); /* Viewport height minus header */
   }
+
+  .hero > .card {
+    padding: var(--global-column-gap);
+  }
+
+  .hero > .card > h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .hero > .card > p {
+    font-size: 24px;
+  }
+
+  .hero > button.play {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  button.play > .triangle {
+    border-top: 2.5vw solid transparent;
+    border-bottom: 2.5vw solid transparent;
+    border-left: 4vw solid var(--black);
+    transform: translateX(2.75vw);
+  }
   /* Footer ------------------------------------------------------ */
 
   /* Index: Hero -------------------------------------------------*/
+
+  .hero.index > .card {
+    left: var(--global-margin);
+    bottom: var(--global-margin);
+  }
 
   /* Index: This month -------------------------------------------------- */
 
