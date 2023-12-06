@@ -24,27 +24,28 @@ body {
 
 /* Header ------------------------------------------------------ */
 header {
+  background-color: var(--white-desert);
+  background: linear-gradient(
+    to top,
+    #000000 1px,
+    #000000 1px,
+    var(--white-desert) 1px,
+    var(--white-desert) 30px
+  );
+  background-size: 100% 26px;
+}
+.header-mob {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white-desert);
-  height: 100px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #000000 1px,
-    #000000 2px,
-    var(--white-desert) 1px,
-    var(--white-desert) 30px
-  );
-  /* background-size: 100% 30px; */
 }
 header img {
   max-height: 100%;
   max-width: 70px;
   margin-left: 20px;
 }
-header h1 {
+.title-mob {
   margin: 0;
   font-size: 3em;
 }
@@ -101,10 +102,14 @@ header h1 {
     height: 110px;
   }
 
+  .header-mob {
+    display: none;
+  }
+  
+  /* Header-->Navigation ----------------------------------------- */
   .nav-container-mob {
     display: none;
   }
-  /* Header-->Navigation ----------------------------------------- */
 
   /* Hero -------------------------------------------------------- */
   .hero {
