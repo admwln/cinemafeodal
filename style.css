@@ -24,11 +24,38 @@ body {
 
 /* Header ------------------------------------------------------ */
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--white-desert);
   height: 100px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #000000 1px,
+    #000000 2px,
+    var(--white-desert) 1px,
+    var(--white-desert) 30px
+  );
+  /* background-size: 100% 30px; */
+}
+header img {
+  max-height: 100%;
+  max-width: 70px;
+  margin-left: 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 3em;
 }
 /* Header-->Navigation ----------------------------------------- */
-
+.nav-container-mob div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  margin-right: 20px;
+}
 /* Hero -------------------------------------------------------- */
 .hero {
   background-color: var(--black); /* Used if the image is unavailable */
@@ -72,6 +99,10 @@ header {
   /* Header ------------------------------------------------------ */
   header {
     height: 110px;
+  }
+
+  .nav-container-mob {
+    display: none;
   }
   /* Header-->Navigation ----------------------------------------- */
 
