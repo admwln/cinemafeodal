@@ -16,10 +16,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--black);
 }
 
 body {
+  color: var(--black);
   background-color: var(--black);
 }
 
@@ -127,7 +127,48 @@ button.play > .triangle {
 /* Movie: Main-->Title booking card ---------------------------------------- */
 
 /* Movie: Main-->Container ------------------------------------------------- */
+.column-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: var(--global-margin);
+  color: var(--white-desert);
+}
 
+.column-details h2::after {
+  content: "+"; /* Unicode character for "plus" sign (+) */
+  color: var(--white-desert);
+  border: none;
+  float: right;
+  font-size: 1.5rem;
+}
+
+.column-details h2.expanded::after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+  padding-right: 2px;
+}
+
+.collapsible-content {
+  overflow-y: hidden;
+  max-height: 0;
+  transition: max-height 250ms ease-in-out;
+}
+
+.collapsible-content.expanded {
+  max-height: 500px;
+}
+
+.story > p,
+.cast > div > div {
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.cast > div {
+  margin: 0.5rem 0 1rem 0;
+}
 /* Media queries------------------------------------------------ */
 
 @media (min-width: 700px) {
