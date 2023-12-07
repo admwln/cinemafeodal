@@ -224,11 +224,6 @@ button.play > .triangle {
   font-size: small;
 }
 
-/* .movie-card-container-desk {
-  display: flex;
-  gap: 10px;
-} */
-/**/
 .movie-card-container-desk {
   display: none;
 }
