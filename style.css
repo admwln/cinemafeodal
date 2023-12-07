@@ -185,6 +185,28 @@ button.play > .triangle {
 }
 
 /* Index: This month -------------------------------------------------- */
+.movie-card-heading {
+  color: white;
+}
+
+.movie-card-container {/**/
+  display: flex;
+}
+
+.exorcist-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-wrapper {
+  background-color: #8faf7e;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  /* text-align: center; */
+}
 
 /* Index: Next month -------------------------------------------------- */
 
