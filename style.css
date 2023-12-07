@@ -125,6 +125,13 @@ button.play > .triangle {
 /* Movie: Main-->Title booking card ---------------------------------------- */
 
 /* Movie: Main-->Container ------------------------------------------------- */
+main > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Movie: Main-->Container-->Column-details--------------------------------*/
 .column-details {
   display: flex;
   flex-direction: column;
@@ -170,8 +177,9 @@ button.play > .triangle {
 
 /* Movie: Main-->Container-->Column-images--------------------------------*/
 .column-images {
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -203,6 +211,7 @@ button.play > .triangle {
 
 .arrow {
   position: absolute;
+  top: 40%;
   z-index: 10;
 }
 
@@ -290,6 +299,54 @@ button.play > .triangle {
   /* Movie: Main-->Title booking card ---------------------------------------- */
 
   /* Movie: Main-->Container ------------------------------------------------- */
+
+  /* Movie: Main-->Container-->Column-details--------------------------------*/
+  .column-details {
+    width: calc(50% - var(--global-margin));
+    padding-right: 9vw;
+    margin: var(--global-column-gap) 0 var(--global-column-gap)
+      var(--global-margin);
+    justify-content: flex-start;
+  }
+
+  .story,
+  .cast {
+    margin: 0 var(--global-column-gap);
+  }
+
+  .column-details h2::after {
+    content: "";
+  }
+
+  .column-details h2.expanded::after {
+    content: "";
+  }
+
+  /* Movie: Main-->Container-->Column-images--------------------------------*/
+  .column-images {
+    width: calc(50% - var(--global-margin));
+    margin: var(--global-column-gap);
+  }
+
+  .slider-slides {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+    overflow-x: auto;
+    gap: var(--global-column-gap);
+    max-height: unset;
+  }
+
+  .slider-slide {
+    display: block;
+    width: fit-content;
+  }
+
+  .slider-slide > img {
+    width: 22vw;
+  }
 
   /* Media queries------------------------------------------------ */
 }
