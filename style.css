@@ -4,6 +4,7 @@
   --white-desert: #fffdeb;
   --red-leather: #463131;
   --red-velvet: #c81d04;
+  --red-velvet-dark: #b70000;
   --yellow-mellow: #faef8a;
   --yellow-mellow-75: #faef8abf;
 
@@ -41,7 +42,7 @@ header {
     var(--white-desert) 1px,
     var(--white-desert) 30px
   );
-  background-size: 100% 26px;  
+  background-size: 100% 26px;
 }
 
 header img {
@@ -196,6 +197,51 @@ button.play > .triangle {
 /* Movie: Main ------------------------------------------------------- */
 
 /* Movie: Main-->Title booking card ---------------------------------------- */
+.title-booking-card {
+  background-color: var(--yellow-mellow);
+  padding: 12px var(--global-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title-booking-card > h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-booking-card span {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* .title-booking-card span.director {
+  margin-bottom: 1rem;
+} */
+
+.title-booking-card > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.title-booking-card .date-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-booking-card .book-btn {
+  color: var(--white-desert);
+  background-color: var(--red-velvet);
+  font-size: 24px;
+  font-weight: medium;
+  border-radius: 10px;
+  border: 2px solid var(--red-velvet-dark);
+  padding: 6px 12px;
+  cursor: pointer;
+}
 
 /* Movie: Main-->Container ------------------------------------------------- */
 main > .container {

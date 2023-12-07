@@ -40,8 +40,12 @@ function handleViewportChange(e) {
       collapsible.classList.add("expanded");
     });
   } else {
-    // The viewport is less than 700px wide
-    // Collapsible sections
+    const filmDetailCollapsible = document.querySelectorAll(
+      ".column-details .collapsible-content"
+    );
+    filmDetailCollapsible.forEach((collapsible) => {
+      collapsible.classList.remove("expanded");
+    });
   }
 }
 // Register the listener
