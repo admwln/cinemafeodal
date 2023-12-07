@@ -56,7 +56,6 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-    
 }
 
 .header-desk img {
@@ -67,6 +66,10 @@ header img {
 .title-mob {
   margin: 0;
   font-size: 3em;
+}
+
+.title-desk-content {
+  margin-left: 50px;
 }
 
 .title-desk {
@@ -85,8 +88,10 @@ header img {
 
 .nav-container-desk {
   display: flex;
+  gap: 30px;
   margin-top: 80px;
-  margin-right: 20px;
+  margin-right: 40px;
+  margin-left: auto;
 }
 
 .nav-container-desk p {
