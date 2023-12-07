@@ -326,25 +326,27 @@ button.play > .triangle {
   }
 
   /* Index: This month -------------------------------------------------- */
-
   .movie-card-container-mob {
     display: none;
-  }
-
-  .movie-card-container-desk {
-    display: flex;
-    margin: var(--global-margin);
-    gap: var(--global-column-gap);
-    width: 100%;
-  }
-
-  .movie-card-container-desk>div {
-    width: calc(25% - 50px);
   }
 
   .movie-card-container-desk>div>img {
     width: 100%;
   }
+
+  .movie-card-container-desk {
+    display: flex;
+    overflow-x: scroll;
+    margin: var(--global-margin);
+    gap: var(--global-column-gap);
+    scroll-snap-type: x mandatory;
+}
+
+.movie-card-container-desk>div {
+    width: calc(25% - var(--global-column-gap));
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
 
   /* Index: Next month -------------------------------------------------- */
 
