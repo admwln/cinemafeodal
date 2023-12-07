@@ -53,10 +53,14 @@ header img {
 }
 
 .header-desk-content {
-  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
 }
 
 .header-desk img {
+  display: flex;
   margin-top: 10px;
 }
 
@@ -81,6 +85,16 @@ header img {
 
 .nav-container-desk {
   display: flex;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+.nav-container-desk p {
+  margin-right: 20px;
+}
+
+.nav-container-desk p:last-child {
+  margin-right: 0;
 }
 
 /* Hero -------------------------------------------------------- */
