@@ -34,9 +34,82 @@ body {
 /* Header ------------------------------------------------------ */
 header {
   background-color: var(--white-desert);
-  height: 100px;
+  background: linear-gradient(
+    to top,
+    #000000 1px,
+    #000000 1px,
+    var(--white-desert) 1px,
+    var(--white-desert) 30px
+  );
+  background-size: 100% 26px;  
 }
+
+header img {
+  max-height: 100%;
+  max-width: 70px;
+  margin-left: 20px;
+}
+
+.header-mob {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-desk {
+  display: flex;
+}
+
+.header-desk-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-desk img {
+  display: flex;
+  margin-top: 10px;
+}
+
+.title-mob {
+  margin: 0;
+  font-size: 3em;
+}
+
+.title-desk-content {
+  margin-left: 50px;
+}
+
+.title-desk {
+  margin: 0;
+  font-size: 4.3em;
+}
+
 /* Header-->Navigation ----------------------------------------- */
+.nav-container-mob div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  margin-right: 20px;
+}
+
+.nav-container-desk {
+  display: flex;
+  gap: 30px;
+  margin-top: 80px;
+  margin-right: 40px;
+  margin-left: auto;
+}
+
+.nav-container-desk p {
+  margin-right: 20px;
+}
+
+.nav-container-desk p:last-child {
+  margin-right: 0;
+}
 
 /* Hero -------------------------------------------------------- */
 .hero {
@@ -148,11 +221,23 @@ button.play > .triangle {
   header {
     height: 110px;
   }
+
+  .title-mob {
+    display: none;
+  }
+
+  .header-mob {
+    display: none;
+  }
+
   /* Header-->Navigation ----------------------------------------- */
+  .nav-container-mob {
+    display: none;
+  }
 
   /* Hero -------------------------------------------------------- */
   .hero {
-    height: calc(100dvh - 110px); /* Viewport height minus header */
+    height: calc(100vh - 110px); /* Viewport height minus header */
   }
 
   .hero > .card {
