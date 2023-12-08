@@ -187,8 +187,16 @@ button.play > .triangle {
 /* Index: This month -------------------------------------------------- */
 .movie-card-heading-mob {
   color: white;
+  margin: var(--global-margin);
 }
 
+/* Movie Card Mobile Text Size */
+.movie-card-mob h2,
+.movie-card-mob p {
+  font-size: 14px;
+}
+
+/* Movie Card Mobile Scroll */
 .movie-card-container-mob {
   display: flex;
   overflow-x: scroll;
@@ -197,36 +205,21 @@ button.play > .triangle {
   scroll-snap-type: x mandatory;
 }
 
+/* Movie Card Mobile Scroll */
 .movie-card-container-mob>div {
   width: calc(50% - var(--global-column-gap));
   flex-shrink: 0;
   scroll-snap-align: start;
 }
 
-/* .exorcist-card-mob {
+.movie-card-mob {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sunset-card-mob {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-.exorcist-card-mob,
-.sunset-card-mob {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.exorcist-card-mob img,
-.sunset-card-mob img,
+.movie-card-mob img,
 .text-wrapper {
   width: 100%;
   height: auto;
@@ -335,14 +328,31 @@ button.play > .triangle {
   }
 
   /* Index: This month -------------------------------------------------- */
+  .movie-card-heading-mob {
+    display: none;
+  }
+  
   .movie-card-container-mob {
     display: none;
+  }
+  /* Heading Text Desktop */
+  .movie-card-heading-desk {
+    color: white;
+    margin: var(--global-margin);
+    font-size: 44px;
   }
 
   .movie-card-container-desk>div>img {
     width: 100%;
   }
+  
+  /* Movie Card Desktop Text Size */
+  .movie-card-container-desk h2,
+  .movie-card-container-desk p {
+  font-size: 16px;
+}
 
+  /* Movie Card Desktop Scroll */
   .movie-card-container-desk {
     display: flex;
     overflow-x: scroll;
@@ -351,7 +361,8 @@ button.play > .triangle {
     scroll-snap-type: x mandatory;
 }
 
-.movie-card-container-desk>div {
+  /* Movie Card Desktop Scroll */
+  .movie-card-container-desk>div {
     width: calc(25% - var(--global-column-gap));
     flex-shrink: 0;
     scroll-snap-align: start;
