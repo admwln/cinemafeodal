@@ -237,17 +237,19 @@ footer img {
 }
 
 /* Index: This month -------------------------------------------------- */
+
+/* Heading Text Mobile */
 .movie-card-heading-mob {
   color: white;
   margin-left: var(--global-margin);
   margin-top: var(--global-margin);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* Movie Card Mobile Text Size */
 .movie-card-mob h2,
 .movie-card-mob p {
-  font-size: 11px;
+  font-size: 16px;
 }
 
 /* Movie Card Mobile Scroll */
@@ -266,6 +268,7 @@ footer img {
   scroll-snap-align: start;
 }
 
+/* Movie Card Mobile */
 .movie-card-mob {
   position: relative;
   display: flex;
@@ -273,13 +276,14 @@ footer img {
   align-items: center;
 }
 
+/* Movie Card Mobile Image */
 .movie-card-mob img,
 .text-wrapper {
   width: 100%;
   height: auto;
-  font-size: small;
 }
 
+/* Movie Card Container Desktop Hidden */
 .movie-card-container-desk {
   display: none;
 }
@@ -292,6 +296,7 @@ footer img {
   align-items: center;
 }
 
+/* Scroll Buttons Mobile */
 .scroll-btn-mob {
   position: absolute;
   top: 50%;
@@ -352,6 +357,7 @@ footer img {
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
+/* Movie Cards Text Wrapper */
 .text-wrapper {
   background-color: #8faf7e;
   padding: 10px;
@@ -359,6 +365,7 @@ footer img {
 }
 
 /* Index: Next month -------------------------------------------------- */
+
 .heading-this-month {
   margin-top: 0;
 }
@@ -654,8 +661,13 @@ main > .container {
   .movie-card-heading-desk {
     color: white;
     margin-left: var(--global-margin);
-    margin-right: var(--global-margin);
-    margin-top: 30px;
+    margin-top: var(--global-margin);
+    font-size: 34px;
+  }
+
+  .movie-card-heading-desk-nm {
+    color: white;
+    margin-left: var(--global-margin);
     font-size: 34px;
   }
 
