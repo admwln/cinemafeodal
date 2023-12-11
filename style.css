@@ -171,7 +171,59 @@ button.play > .triangle {
   transition: color 150ms ease-in-out;
 }
 /* Footer ------------------------------------------------------ */
+footer {
+  background-color: var(--green-pear);
+  color: var(--white-desert);
+  margin: var(--global-column-gap) var(--global-margin);
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
 
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 33%;
+}
+
+.footer-card:nth-of-type(1),
+.footer-card:nth-of-type(2),
+.footer-card:nth-of-type(3) {
+  padding-right: 12px;
+  border-right: 1px solid var(--white-desert);
+}
+
+footer h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+footer span {
+  font-size: 10px;
+}
+
+.footer-card > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-card.desktop-only {
+  display: none;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
 /* Index: Hero -------------------------------------------------------- */
 .hero.index {
   background-image: url("images/hero.png");
@@ -410,6 +462,46 @@ main > .container {
     transform: translateX(2.75vw);
   }
   /* Footer ------------------------------------------------------ */
+  footer {
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+  }
+
+  div.footer-card,
+  div.footer-card.desktop-only {
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 25%;
+  }
+
+  div.footer-card:nth-of-type(1),
+  div.footer-card:nth-of-type(2),
+  div.footer-card:nth-of-type(3) {
+    border-right: 2px solid var(--white-desert);
+  }
+
+  footer h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  footer span {
+    font-size: 18px;
+  }
+
+  .footer-card > div {
+    gap: var(--global-column-gap);
+  }
+
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
 
   /* Index: Hero -------------------------------------------------*/
 
