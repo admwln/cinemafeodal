@@ -55,8 +55,12 @@
     </section>
     <section class="this-month">
         <!-- Movie Cards Mobile -->
-        <h2 class="movie-card-heading-mob">December på Feodal</h2>
-        <div class="movie-card-container-mob">
+        <h2 class="movie-card-heading-mob mobile-only">December på Feodal</h2>
+        <!---->
+        <div class="movie-scroll-container-mob">
+            <button class="scroll-btn-mob left-scroll-mob mobile-only" onclick="scrollMovieCardsMob('left')"></button>
+            <!---->
+            <div id="movieCardContainerMob" class="movie-card-container-mob">
             <div class="movie-card-mob">
                 <img src="/images/slider/exorcist.png" alt="The Exorcist">
                 <div class="text-wrapper">
@@ -100,11 +104,16 @@
                 </div>
             </div>
         </div>
+         <!---->
+        <button class="scroll-btn-mob right-scroll-mob mobile-only" onclick="scrollMovieCardsMob('right')"></button>
+         <!---->
+    </div>
+
         <!-- Movie Cards Desktop -->
-        <h2 class="movie-card-heading-desk">December på Feodal</h2>
+        <h2 class="movie-card-heading-desk desktop-only">December på Feodal</h2>
         <div class="movie-scroll-container">
-            <button class="scroll-btn left-scroll desktop-only" onclick="scrollMovieCards('left')"></button>  
-            <div id="movieCardContainer" class="movie-card-container-desk">     <!---->
+            <button class="scroll-btn left-scroll desktop-only" onclick="scrollMovieCards('left')"></button>
+            <div id="movieCardContainer" class="movie-card-container-desk">
                 <div class="exorcist-card-desk">
                     <img src="/images/slider/exorcist.png" alt="The Exorcist">
                     <div class="text-wrapper">
@@ -149,7 +158,7 @@
                 </div>
             </div>
             <button class="scroll-btn right-scroll desktop-only" onclick="scrollMovieCards('right')"></button>
-            </div>
+        </div>
 
     </section>
     <section class="next-month"></section>
