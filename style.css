@@ -261,7 +261,7 @@ footer img {
 
 /* Movie Card Mobile Scroll */
 .movie-card-container-mob>div {
-  width: calc(50% - var(--global-column-gap));
+  width: 100%;
   flex-shrink: 0;
   scroll-snap-align: start;
 }
@@ -670,7 +670,7 @@ main > .container {
     margin-right: var(--global-margin);
     margin-bottom: var(--global-margin);
     margin-top: 30px;
-    gap: var(--global-column-gap);
+    gap: 31px;
     scroll-snap-type: x mandatory;
 }
 
