@@ -53,7 +53,114 @@
             <p class="desktop-only">KL 23.30</p>
         </div>
     </section>
-    <section class="this-month"></section>
+    <section class="this-month">
+        <!-- Movie Cards Mobile -->
+        <h2 class="movie-card-heading-mob mobile-only">December på Feodal</h2>
+        <!---->
+        <div class="movie-scroll-container-mob">
+            <button class="scroll-btn-mob left-scroll-mob mobile-only" onclick="scrollMovieCardsMob('left')"></button>
+            <!---->
+            <div id="movieCardContainerMob" class="movie-card-container-mob">
+            <div class="movie-card-mob">
+                <img src="/images/slider/exorcist.png" alt="The Exorcist">
+                <div class="text-wrapper">
+                    <h2>Exorcisten</h2>
+                    <p>Onsdag 8 december, kl 20.00</p>
+                </div>
+            </div>
+            <div class="movie-card-mob">
+                <img src="/images/slider/sunset-blvd.png" alt="Sunset Boulevard">
+                <div class="text-wrapper">
+                    <h2>Sunset Boulevard</h2>
+                    <p>Lördag 13 december, kl 19.00</p>
+                </div>
+            </div>
+            <div class="movie-card-mob">
+                <img src="/images/slider/north-by-northwest.png" alt="North by Northwest">
+                <div class="text-wrapper">
+                    <h2>I Sista Minuten</h2>
+                    <p>Tisdag 17 december, kl 20.00</p>
+                </div>
+            </div>
+            <div class="movie-card-mob">
+                <img src="/images/slider/elf.png" alt="Elf">
+                <div class="text-wrapper">
+                    <h2>Elf</h2>
+                    <p>Onsdag 18 december, kl 19.00</p>
+                </div>
+            </div>
+            <div class="movie-card-mob">
+                <img src="/images/slider/american-grafiti.png" alt="American Grafiti">
+                <div class="text-wrapper">
+                    <h2>Sista Natten med Gänget</h2>
+                    <p>Lördag 21 december, kl 20.00</p>
+                </div>
+            </div>
+            <div class="movie-card-mob">
+                <img src="/images/slider/raising-arizona.png" alt="Raising Arizona">
+                <div class="text-wrapper">
+                    <h2>Raising Arizona</h2>
+                    <p>Söndag 22 december, kl 19.00</p>
+                </div>
+            </div>
+        </div>
+         <!---->
+        <button class="scroll-btn-mob right-scroll-mob mobile-only" onclick="scrollMovieCardsMob('right')"></button>
+         <!---->
+    </div>
+
+        <!-- Movie Cards Desktop -->
+        <h2 class="movie-card-heading-desk desktop-only">December på Feodal</h2>
+        <div class="movie-scroll-container">
+            <button class="scroll-btn left-scroll desktop-only" onclick="scrollMovieCards('left')"></button>
+            <div id="movieCardContainer" class="movie-card-container-desk">
+                <div class="exorcist-card-desk">
+                    <img src="/images/slider/exorcist.png" alt="The Exorcist">
+                    <div class="text-wrapper">
+                        <h2>Exorcisten</h2>
+                        <p>Onsdag 8 december, kl 20.00</p>
+                    </div>
+                </div>
+                <div class="sunset-card-desk">
+                    <img src="/images/slider/sunset-blvd.png" alt="Sunset Boulevard">
+                    <div class="text-wrapper">
+                        <h2>Sunset Boulevard</h2>
+                        <p>Lördag 13 december, kl 19.00</p>
+                    </div>
+                </div>
+                <div class="north-card-desk">
+                    <img src="/images/slider/north-by-northwest.png" alt="North by Northwest">
+                    <div class="text-wrapper">
+                        <h2>I Sista Minuten</h2>
+                        <p>Tisdag 17 december, kl 20.00</p>
+                    </div>
+                </div>
+                <div class="elf-card-desk">
+                    <img src="/images/slider/elf.png" alt="Elf">
+                    <div class="text-wrapper">
+                        <h2>Elf</h2>
+                        <p>Onsdag 18 december, kl 19.00</p>
+                    </div>
+                </div>
+                <div class="grafiti-card-desk">
+                    <img src="/images/slider/american-grafiti.png" alt="American Grafiti">
+                    <div class="text-wrapper">
+                        <h2>Sista Natten med Gänget</h2>
+                        <p>Lördag 21 december, kl 20.00</p>
+                    </div>
+                </div>
+                <div class="arizona-card-desk">
+                    <img src="/images/slider/raising-arizona.png" alt="Raising Arizona">
+                    <div class="text-wrapper">
+                        <h2>Raising Arizona</h2>
+                        <p>Söndag 22 december, kl 19.00</p>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn right-scroll desktop-only" onclick="scrollMovieCards('right')"></button>
+        </div>
+
+    </section>
     <section class="next-month"></section>
     <section class="campaign"></section>
     <footer>
