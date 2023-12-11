@@ -359,6 +359,13 @@ footer img {
 }
 
 /* Index: Next month -------------------------------------------------- */
+.heading-this-month {
+  margin-top: 0;
+}
+
+.text-wrapper-nm {
+  background-color: var(--yellow-mellow);
+}
 
 /* Index: Campaign ---------------------------------------------------- */
 
