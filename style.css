@@ -237,17 +237,18 @@ footer img {
 }
 
 /* Index: This month -------------------------------------------------- */
+/* Heading Text Mobile */
 .movie-card-heading-mob {
   color: var(--white-desert);
   margin-left: var(--global-margin);
   margin-top: var(--global-margin);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* Movie Card Mobile Text Size */
 .movie-card-mob h2,
 .movie-card-mob p {
-  font-size: 11px;
+  font-size: 16px;
 }
 
 /* Movie Card Mobile Scroll */
@@ -257,12 +258,18 @@ footer img {
   margin: var(--global-margin);
   gap: var(--global-column-gap);
   scroll-snap-type: x mandatory;
+  scrollbar-color: transparent transparent;
   scrollbar-width: 0px;
 }
 
 .movie-card-container-mob::-webkit-scrollbar {
   display: none;
+
 }
+
+  .movie-card-container-mob::-webkit-scrollbar {
+    display: none;
+  }
 
 /* Movie Card Mobile Scroll */
 .movie-card-container-mob > div {
@@ -271,6 +278,7 @@ footer img {
   scroll-snap-align: start;
 }
 
+/* Movie Card Mobile */
 .movie-card-mob {
   position: relative;
   display: flex;
@@ -278,13 +286,14 @@ footer img {
   align-items: center;
 }
 
+/* Movie Card Mobile Image */
 .movie-card-mob img,
 .text-wrapper {
   width: 100%;
   height: auto;
-  font-size: small;
 }
 
+/* Movie Card Container Desktop Hidden */
 .movie-card-container-desk {
   display: none;
 }
@@ -297,6 +306,7 @@ footer img {
   align-items: center;
 }
 
+/* Scroll Buttons Mobile */
 .scroll-btn-mob {
   position: absolute;
   top: 50%;
@@ -357,6 +367,7 @@ footer img {
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
+/* Movie Cards Text Wrapper */
 .text-wrapper {
   background-color: #8faf7e;
   padding: 10px;
@@ -364,6 +375,14 @@ footer img {
 }
 
 /* Index: Next month -------------------------------------------------- */
+
+.heading-this-month {
+  margin-top: 0;
+}
+
+.text-wrapper-nm {
+  background-color: var(--yellow-mellow);
+}
 
 /* Index: Campaign ---------------------------------------------------- */
 
@@ -756,12 +775,27 @@ main > .container {
     display: none;
   }
 
+  /* Anchor Tag Settings Desktop */
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  #movieCardContainer .movie-card-desk a img {
+    width: 100%;
+ }
+
   /* Heading Text Desktop */
   .movie-card-heading-desk {
     color: var(--white-desert);
     margin-left: var(--global-margin);
-    margin-right: var(--global-margin);
-    margin-top: 30px;
+    margin-top: var(--global-margin);
+    font-size: 34px;
+  }
+
+  .movie-card-heading-desk-nm {
+    color: white;
+    margin-left: var(--global-margin);
     font-size: 34px;
   }
 
@@ -786,6 +820,9 @@ main > .container {
     gap: 31px;
     scroll-snap-type: x mandatory;
     scrollbar-color: transparent transparent;
+  }
+  .movie-card-container-desk::-webkit-scrollbar {
+    display: none;
   }
 
   .movie-card-container-desk::-webkit-scrollbar {
