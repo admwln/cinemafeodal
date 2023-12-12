@@ -259,7 +259,12 @@ footer img {
   margin: var(--global-margin);
   gap: var(--global-column-gap);
   scroll-snap-type: x mandatory;
+  scrollbar-color: transparent transparent;
 }
+
+  .movie-card-container-mob::-webkit-scrollbar {
+    display: none;
+  }
 
 /* Movie Card Mobile Scroll */
 .movie-card-container-mob>div {
@@ -691,7 +696,12 @@ main > .container {
     margin-top: 30px;
     gap: 31px;
     scroll-snap-type: x mandatory;
+    scrollbar-color: transparent transparent;
 }
+
+  .movie-card-container-desk::-webkit-scrollbar {
+    display: none;
+  }
 
   /* Movie Card Desktop Scroll */
   .movie-card-container-desk>div {
