@@ -237,7 +237,6 @@ footer img {
 }
 
 /* Index: This month -------------------------------------------------- */
-
 /* Heading Text Mobile */
 .movie-card-heading-mob {
   color: white;
@@ -661,6 +660,16 @@ main > .container {
   .movie-card-container-mob {
     display: none;
   }
+
+  /* Anchor Tag Settings Desktop */
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  #movieCardContainer .movie-card-desk a img {
+    width: 100%;
+ }
 
   /* Heading Text Desktop */
   .movie-card-heading-desk {
