@@ -239,7 +239,7 @@ footer img {
 /* Index: This month -------------------------------------------------- */
 /* Heading Text Mobile */
 .movie-card-heading-mob {
-  color: white;
+  color: var(--white-desert);
   margin-left: var(--global-margin);
   margin-top: var(--global-margin);
   font-size: 20px;
@@ -259,6 +259,12 @@ footer img {
   gap: var(--global-column-gap);
   scroll-snap-type: x mandatory;
   scrollbar-color: transparent transparent;
+  scrollbar-width: 0px;
+}
+
+.movie-card-container-mob::-webkit-scrollbar {
+  display: none;
+
 }
 
   .movie-card-container-mob::-webkit-scrollbar {
@@ -266,7 +272,7 @@ footer img {
   }
 
 /* Movie Card Mobile Scroll */
-.movie-card-container-mob>div {
+.movie-card-container-mob > div {
   width: 100%;
   flex-shrink: 0;
   scroll-snap-align: start;
@@ -330,7 +336,7 @@ footer img {
 
 .scroll-btn-mob::before,
 .scroll-btn-mob::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -380,6 +386,114 @@ footer img {
 
 /* Index: Campaign ---------------------------------------------------- */
 
+.campaign {
+  color: var(--white-desert);
+  margin: var(--global-column-gap) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-column-gap);
+}
+
+.campaign > div {
+  background-color: var(--red-leather);
+  padding: var(--global-margin) calc(var(--global-column-gap));
+  min-height: 200px;
+}
+
+.campaign h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.campaign p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.marathon {
+  /* position: relative; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--global-column-gap);
+}
+
+.marathon > img {
+  /* position: absolute;
+  bottom: -70px;
+  right: 0; */
+  width: 115px;
+  height: auto;
+}
+
+.to-marathon {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  position: relative;
+  color: var(--white-desert);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: calc(var(--global-column-gap) / 2);
+}
+
+.to-marathon > img {
+  width: 25px;
+  height: auto;
+  margin: none;
+  position: absolute;
+  top: 4px;
+  right: -30px;
+}
+
+#email-input {
+  vertical-align: top;
+  font-size: 16px;
+  width: 80%;
+  height: 36px;
+  padding: 10px 6px 12px 12px;
+  border: none;
+  outline: none;
+  border-radius: 60px 0 0 60px;
+  background-color: var(--yellow-mellow);
+  color: var(--black);
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.newsletter label {
+  color: transparent;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+}
+
+.newsletter button {
+  vertical-align: top;
+  font-size: 16px;
+  width: 20%;
+  height: 36px;
+  padding: 8px 12px 5px 8px;
+  border: none;
+  outline: none;
+  border-radius: 0 60px 60px 0;
+  background-color: var(--green-pear);
+  cursor: pointer;
+}
+
+.newsletter button > img {
+  width: 20px;
+  height: auto;
+  margin: none;
+  padding: none;
+}
 /* Movie: Hero ------------------------------------------------------- */
 .hero.movie-page {
   background-image: url("images/movie-page-img/hero.png");
@@ -656,7 +770,7 @@ main > .container {
   .movie-card-heading-mob {
     display: none;
   }
-  
+
   .movie-card-container-mob {
     display: none;
   }
@@ -673,7 +787,7 @@ main > .container {
 
   /* Heading Text Desktop */
   .movie-card-heading-desk {
-    color: white;
+    color: var(--white-desert);
     margin-left: var(--global-margin);
     margin-top: var(--global-margin);
     font-size: 34px;
@@ -685,15 +799,15 @@ main > .container {
     font-size: 34px;
   }
 
-  .movie-card-container-desk>div>img {
+  .movie-card-container-desk > div > img {
     width: 100%;
   }
-  
+
   /* Movie Card Desktop Text Size */
   .movie-card-container-desk h2,
   .movie-card-container-desk p {
     font-size: 16px;
-}
+  }
 
   /* Movie Card Desktop Scroll */
   .movie-card-container-desk {
@@ -706,25 +820,28 @@ main > .container {
     gap: 31px;
     scroll-snap-type: x mandatory;
     scrollbar-color: transparent transparent;
-}
+  }
+  .movie-card-container-desk::-webkit-scrollbar {
+    display: none;
+  }
 
   .movie-card-container-desk::-webkit-scrollbar {
     display: none;
   }
 
   /* Movie Card Desktop Scroll */
-  .movie-card-container-desk>div {
+  .movie-card-container-desk > div {
     width: calc(25% - var(--global-column-gap));
     flex-shrink: 0;
     scroll-snap-align: start;
-}
+  }
 
   /* Scroll Buttons */
   .movie-scroll-container {
     position: relative;
     display: flex;
     align-items: center;
-}
+  }
 
   .scroll-btn {
     position: absolute;
@@ -737,7 +854,7 @@ main > .container {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 150ms ease-in-out;
-}
+  }
 
   .scroll-btn:hover,
   .scroll-btn:active {
@@ -746,15 +863,15 @@ main > .container {
 
   .left-scroll {
     left: 50px;
-}
+  }
 
   .right-scroll {
     right: 60px;
-}
+  }
 
   .scroll-btn::before,
   .scroll-btn::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -769,17 +886,17 @@ main > .container {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
   }
-  
+
   .left-scroll::after {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
   }
-  
+
   .right-scroll::before {
     left: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
   }
-  
+
   .right-scroll::after {
     left: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
@@ -789,6 +906,121 @@ main > .container {
 
   /* Index: Campaign ---------------------------------------------------- */
 
+  .campaign {
+    color: var(--white-desert);
+    margin: var(--global-column-gap) var(--global-margin);
+    display: flex;
+    flex-direction: row;
+    gap: var(--global-column-gap);
+  }
+
+  .campaign > div {
+    padding: var(--global-column-gap) var(--global-column-gap);
+  }
+
+  .campaign h2 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .campaign p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .marathon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: var(--global-column-gap);
+    width: calc(50% - 12px);
+  }
+
+  .marathon > div {
+    width: 65%;
+  }
+
+  .marathon .to-marathon {
+    margin-top: 1rem;
+  }
+
+  .marathon > img {
+    position: absolute;
+    bottom: -80px;
+    right: 20px;
+    width: 13vw;
+    height: auto;
+  }
+
+  .to-marathon {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--white-desert);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: calc(var(--global-column-gap) / 2);
+    position: relative;
+  }
+
+  .to-marathon > img {
+    width: 30px;
+    height: auto;
+    margin: none;
+    position: absolute;
+    top: 3px;
+    right: -40px;
+  }
+
+  #email-input {
+    vertical-align: top;
+    font-size: 22px;
+    width: 50%;
+    height: 40px;
+    padding: 10px 6px 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 60px 0 0 60px;
+    background-color: var(--yellow-mellow);
+    color: var(--black);
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: calc(50% - 12px);
+    gap: 0;
+  }
+
+  .newsletter label {
+    color: transparent;
+    font-size: 16px;
+  }
+
+  .newsletter button {
+    vertical-align: top;
+    font-size: 22px;
+    width: 60px;
+    height: 40px;
+    padding: 8px 12px 5px 8px;
+    border: none;
+    outline: none;
+    border-radius: 0 60px 60px 0;
+    background-color: var(--green-pear);
+    cursor: pointer;
+  }
+
+  .newsletter button > img {
+    width: 30px;
+    height: auto;
+    margin: none;
+    padding: none;
+  }
   /* Movie: Hero ------------------------------------------------------- */
 
   /* Movie: Main ------------------------------------------------------- */

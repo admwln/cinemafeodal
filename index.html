@@ -59,11 +59,12 @@
         <div class="movie-scroll-container-mob">
             <button class="scroll-btn-mob left-scroll-mob mobile-only" onclick="scrollMovieCardsMob('left')"></button>
             <div id="movieCardContainerMob" class="movie-card-container-mob">
-            <div class="movie-card-mob">
-                <img src="/images/slider/exorcist.png" alt="The Exorcist">
-                <div class="text-wrapper">
-                    <h2>Exorcisten</h2>
-                    <p>Onsdag 8 december, kl 20.00</p>
+                <div class="movie-card-mob">
+                    <img src="/images/slider/exorcist.png" alt="The Exorcist">
+                    <div class="text-wrapper">
+                        <h2>Exorcisten</h2>
+                        <p>Onsdag 8 december, kl 20.00</p>
+                    </div>
                 </div>
             </div>
             <div class="movie-card-mob">
@@ -101,6 +102,9 @@
                     <p>Söndag 19 december, kl 19.00</p>
                 </div>
             </div>
+            <!---->
+            <button class="scroll-btn-mob right-scroll-mob mobile-only" onclick="scrollMovieCardsMob('right')"></button>
+            <!---->
         </div>
         <button class="scroll-btn-mob right-scroll-mob mobile-only" onclick="scrollMovieCardsMob('right')"></button>
     </div>
@@ -166,10 +170,10 @@
             </div>
             <button class="scroll-btn right-scroll desktop-only" onclick="scrollMovieCards('right')"></button>
         </div>
-
     </section>
 
     <section class="next-month"></section>
+
     <!-- Movie Cards Mobile Next Month -->
     <h2 class="movie-card-heading-mob mobile-only heading-this-month">Kommande filmer</h2>
     <div class="movie-scroll-container-mob">
@@ -273,6 +277,38 @@
     </div>
 
     <section class="campaign"></section>
+
+    <section class="campaign">
+
+        <div class="marathon">
+            <div>
+                <h2>Årets filmmaraton</h2>
+                <p>
+                    Den 13 november är det dags för vårt populära filmmarathon. Vi visar fem filmklassiker till priset
+                    av fyra.
+                </p>
+                <button class="to-marathon btn">Till bokning <img src="images/booking-arrow.png"
+                        alt="Till bokning"></button>
+            </div>
+
+            <img src="images/popcorn.png" alt="En låda popcorn">
+        </div>
+        <div class="newsletter">
+            <h2>Prenumerera</h2>
+            <p>
+                Registrera dig på vårt nyhetsbrev och håll dig uppdaterad om våra kommande visningar och erbjudanden.
+            </p>
+            <label for="email-input">E-post</label>
+            <div>
+                <input type="text" name="email-input" id="email-input" placeholder="name@example.com"><button
+                    type="submit">
+                    <img src="images/mail.png" alt="Envelope symbol">
+                </button>
+            </div>
+        </div>
+
+
+    </section>
     <footer>
         <div class="footer-card">
             <h2>Kontakt</h2>
