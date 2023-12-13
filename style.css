@@ -38,8 +38,8 @@ header {
   background-color: var(--white-desert);
   background: linear-gradient(
     to top,
-    #000000 1px,
-    #000000 1px,
+    #afafaf 1px,
+    #afafaf 1px,
     var(--white-desert) 1px,
     var(--white-desert) 30px
   );
@@ -49,7 +49,8 @@ header {
 header img {
   max-height: 100%;
   max-width: 70px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  margin-left: var(--global-margin);
 }
 
 .header-mob {
@@ -89,30 +90,38 @@ header img {
 }
 
 /* Header-->Navigation ----------------------------------------- */
+.nav-container-mob {
+  /* height: 110px;
+  width: 25%; */
+  background-color: var(--white-desert);
+  /* margin-right: var(--global-margin); */
+}
+
 .nav-container-mob div {
   width: 35px;
-  height: 5px;
+  height: 3px;
   background-color: black;
   margin: 6px 0;
-  margin-right: 20px;
+  margin-right: var(--global-margin);
 }
 
 .nav-container-desk {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   margin-top: 80px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
+  margin-right: var(--global-margin);
   margin-left: auto;
 }
 
 .nav-container-desk p {
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  font-weight: bold;
 }
 
 .nav-container-desk p:last-child {
   margin-right: 0;
 }
-
 /* Hero -------------------------------------------------------- */
 .hero {
   background-color: var(--black); /* Used if the image is unavailable */
