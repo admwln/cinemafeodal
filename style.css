@@ -700,8 +700,12 @@ main > .container {
   .header-desk {
     display: flex;
     justify-content: space-between;
+    height: 110px;
   }
 
+  .header-desk-content img {
+    padding-bottom: 5px;
+  }
   .title-mob {
     display: none;
   }
@@ -712,6 +716,7 @@ main > .container {
 
   .title-desk {
     margin: 0;
+    margin-bottom: 10px;
     font-size: 3.6em;
   }
   /* Header-->Navigation ----------------------------------------- */
