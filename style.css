@@ -290,7 +290,7 @@ footer img {
   margin: var(--global-margin);
   gap: var(--global-column-gap);
   scroll-snap-type: x mandatory;
-  /* scrollbar-color: transparent transparent; */
+  scrollbar-color: transparent transparent;
   /* scrollbar-width: 0px; */
 }
 
@@ -638,6 +638,11 @@ main > .container {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   overscroll-behavior-x: contain;
+  scrollbar-color: transparent transparent;
+}
+
+.slider-slides::-webkit-scrollbar {
+  display: none;
 }
 
 .slider-slide {
