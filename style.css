@@ -56,8 +56,8 @@ header {
 }
 
 header img {
-  max-height: 100%;
-  max-width: 70px;
+  max-height: 85px;
+  max-width: 20vw;
   /* margin-left: 20px; */
   margin-left: var(--global-margin);
 }
@@ -67,6 +67,9 @@ header img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.header-mob h1 {
+  font-size: 40px;
 }
 
 .header-desk {
@@ -100,18 +103,24 @@ header img {
 
 /* Header-->Navigation ----------------------------------------- */
 .nav-container-mob {
-  /* height: 110px;
-  width: 25%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100px;
+  padding: 0 var(--global-margin) 0 3vw;
   background-color: var(--white-desert);
-  /* margin-right: var(--global-margin); */
 }
 
-.nav-container-mob div {
-  width: 35px;
+.nav-container-mob > div {
+  cursor: pointer;
+}
+
+.nav-container-mob > div > div {
+  width: 7vw;
   height: 3px;
-  background-color: black;
+  background-color: var(--black);
   margin: 6px 0;
-  margin-right: var(--global-margin);
 }
 
 .nav-container-desk {
@@ -126,6 +135,7 @@ header img {
 .nav-container-desk p {
   /* margin-right: 20px; */
   font-weight: bold;
+  cursor: pointer;
 }
 
 .nav-container-desk p:last-child {
@@ -664,7 +674,7 @@ main > .container {
 
 /* Media queries------------------------------------------------ */
 
-@media (min-width: 700px) {
+@media (min-width: 790px) {
   :root {
     --global-margin: 64px;
     --global-column-gap: 24px;
@@ -689,6 +699,7 @@ main > .container {
 
   .header-desk {
     display: flex;
+    justify-content: space-between;
   }
 
   .title-mob {
@@ -699,9 +710,27 @@ main > .container {
     display: none;
   }
 
+  .title-desk {
+    margin: 0;
+    font-size: 3.6em;
+  }
   /* Header-->Navigation ----------------------------------------- */
   .nav-container-mob {
+    display: flex;
+  }
+  .nav-container-desk {
     display: none;
+  }
+  .nav-container-mob {
+    height: 110px;
+    padding: 0 var(--global-margin);
+  }
+
+  .nav-container-mob > div > div {
+    width: 35px;
+    height: 3px;
+    background-color: var(--black);
+    margin: 6px 0;
   }
 
   /* Hero -------------------------------------------------------- */
@@ -1100,6 +1129,13 @@ main > .container {
 }
 
 @media (min-width: 900px) {
+  /* Heaöer*/
+
+  .title-desk {
+    margin: 0;
+    font-size: 4.2em;
+  }
+
   /* Footer ------------------------------------------------------ */
   footer {
     padding: 12px;
@@ -1140,5 +1176,32 @@ main > .container {
   footer img {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (min-width: 1220px) {
+  /* Header ------------------------------------------------------ */
+  header {
+    height: 110px;
+  }
+
+  .header-desk {
+    display: flex;
+  }
+
+  .title-mob {
+    display: none;
+  }
+
+  .header-mob {
+    display: none;
+  }
+
+  /* Header-->Navigation ----------------------------------------- */
+  .nav-container-mob {
+    display: none;
+  }
+  .nav-container-desk {
+    display: flex;
   }
 }

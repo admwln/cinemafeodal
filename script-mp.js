@@ -1,5 +1,5 @@
-// Media query for desktop, from 700px
-const mediaQuery = window.matchMedia("(min-width: 700px)");
+// Media query for desktop, from 790px
+const mediaQuery = window.matchMedia("(min-width: 790px)");
 
 function handleViewportChange(e) {
   if (e.matches) {
